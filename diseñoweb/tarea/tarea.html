@@ -1,0 +1,68 @@
+<!-- 1. El tipo de documento: le avisa al navegador que estamos usando HTML moderno (HTML5). -->
+<!DOCTYPE html>
+
+<!-- 2. La etiqueta raíz: es la caja principal que envuelve absolutamente todo el código de la página. -->
+<html lang="es">
+
+    <!-- 3. El head: contenedor invisible para el usuario donde ponemos configuraciones y datos de la página. -->
+    <head>
+        <!-- 4. Codificación de caracteres: sirve para que los acentos y las eñes se lean bien sin errores. -->
+        <meta charset="UTF-8">
+        
+        <!-- 5. Ajuste de pantalla: hace que la página se adapte bien a celulares y computadoras. -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- 6. El título de la pestaña: el texto que aparece arriba en la pestaña del navegador. -->
+        <title>Tarea - Demostración de Etiquetas</title>
+        
+        <!-- 7. Enlace externo: conecta nuestra página con el archivo de estilos de CSS. -->
+        <link rel="stylesheet" href="estilos.css">
+    </head>
+
+    <!-- 8. El cuerpo (body): aquí va todo lo visible, los textos y los botones que el usuario ve y usa. -->
+    <body>
+
+        <!-- 9. La cabecera (header): bloque semántico que por lo general usamos para el título principal o el logo. -->
+        <header>
+            <!-- 10. Título principal (h1): el encabezado más importante y grande de la página. -->
+            <h1>Portal de Programación Web</h1>
+        </header>
+
+        <!-- 11. El menú de navegación (nav): agrupa los enlaces principales para moverse por el sitio. -->
+        <nav>
+            <!-- 12. Enlace (a): un hipervínculo que te lleva a otra sección o página cuando le das clic. -->
+            <a href="#inicio">Inicio</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+
+        <!-- 13. Contenido principal (main): la sección central y más importante de esta vista web. -->
+        <main>
+            
+            <!-- 14. Una sección (section): sirve para agrupar bloques de información que van de la mano. -->
+            <section id="inicio">
+                <!-- 15. Subtítulo (h2): un encabezado secundario para organizar los temas de la página. -->
+                <h2>Sección Principal</h2>
+                
+                <!-- 16. Un párrafo (p): bloque de texto normal para redactar explicaciones o mensajes. -->
+                <p>Este es un texto x de ejemplo que explica el funcionamiento y la redacción de párrafos en HTML.</p>
+            </section>
+
+            <!-- 17. Una caja genérica (div): sirve para agrupar elementos y acomodarlos fácil con CSS. -->
+            <div class="tarjeta">
+                <!-- 18. Una imagen (img): sirve para insertar fotos o ilustraciones (requiere descripción alternativa). -->
+                <img src="imagen.jpg" alt="Ejemplo de imagen descriptiva">
+                
+                <!-- 19. Un botón (button): elemento interactivo para que el usuario pueda hacer clic en él. -->
+                <button type="button">Enviar Datos</button>
+            </div>
+
+        </main>
+
+        <!-- 20. El pie de página (footer): la parte de hasta abajo donde solemos poner avisos o derechos de autor. -->
+        <footer>
+            <!-- (Etiqueta extra) Texto pequeño (small): reduce un poco el texto, ideal para los derechos reservados. -->
+            <small>Derechos reservados 2026</small>
+        </footer>
+
+    </body>
+</html>

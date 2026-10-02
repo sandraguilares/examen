@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/styles.css">
+</head>
+<body>
+    <header>
+        <!-- cada etiqueta que esté dentro de otra etiqueta debe tener un espacio izquierdo de 1 tab -->
+        <h1>TIPS</h1>
+        <!-- El span nos ayuda a crear un apartado seleccionable en mi título o elemento -->
+    </header>
+    <div class="nav-bg">
+    <nav class="investigación-principal contenedor">
+         <a href="../index.html">Inicio</a>
+         <a href="resultados.html">Resultados</a>
+         <a href="trabajemos-juntos.html">Trabajemos Juntos</a>
+         <a href="tips.html">Tips</a>
+         <!-- La etiqueta a sirve para agrupar elementos de la barra de navegación, y en las comillas si no sabes qué poner pon # -->
+    </nav>
+ </div>
+
+ <section class="hero hero-star">
+    <div class="contenido-hero">
+        <h2 class="subtítulo">Estrategias prácticas y planes a la medida de tu marca</h2>
+        <!-- Aquí vamos a poner nuestra imagen -->
+            <!-- <img src="img/hero.jpg" alt="Aquí va mi hero"> -->
+ 
+         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-heart">
+	    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	    <path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+        </svg>
+    </div>
+ </section>
+ 
+<!-- SECCIÓN DE TIPS           -->
+<section class="seccion-tips">
+    <div class="contenedor">
+        <h2 class="subtitulo">Tips para tu marca</h2>
+        <div class="grid-tips">
+            <div class="tip-card">
+                <h3>💡 Tip 1</h3>
+                <p>Define una paleta de colores coherente que transmita la personalidad de tu marca desde el primer segundo.</p>
+            </div>
+            <div class="tip-card">
+                <h3>💡 Tip 2</h3>
+                <p>La constancia en redes sociales es clave, pero la calidad visual siempre superará a la cantidad.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECCIÓN DE PRECIOS Y PLANES -->
+<section class="seccion-precios contenedor">
+    <h2 class="subtitulo">Nuestros Paquetes</h2>
+    <p class="descripcion-seccion">Elige el plan ideal para impulsar tu proyecto</p>
+
+    <!-- Pestañas para cambiar entre Empresas e Influencers -->
+    <div class="switch-planes">
+        <button class="btn-switch activo" data-tipo="empresas" onclick="filtrarPlanes('empresas')">Empresas & Negocios</button>
+        <button class="btn-switch" data-tipo="individual" onclick="filtrarPlanes('individual')">Influencers / Individual</button>
+    </div>
+
+    <!-- Contenedor de los 6 paquetes (Grid) -->
+    <div class="grid-precios">
+
+        <!-- PLAN 1: EMPRESA - Básico -->
+        <div class="precio-card empresa">
+            <span class="etiqueta-plan">Empresa</span>
+            <h3>Impulso Inicial</h3>
+            <p class="precio">$3,500 <span>/ mes</span></p>
+            <ul class="lista-beneficios">
+                <li>✔ Auditoría de marca básica</li>
+                <li>✔ 4 diseños mensuales para redes</li>
+                <li>✔ Optimización de Perfil</li>
+            </ul>
+            <a href="#" class="boton-plan">Elegir Plan</a>
+        </div>
+
+        <!-- PLAN 2: EMPRESA - Pro -->
+        <div class="precio-card empresa">
+            <span class="etiqueta-plan">Empresa</span>
+            <h3>Crecimiento Pro</h3>
+            <p class="precio">$7,000 <span>/ mes</span></p>
+            <ul class="lista-beneficios">
+                <li>✔ Estrategia Digital Completa</li>
+                <li>✔ 12 diseños mensuales</li>
+                <li>✔ Gestión de pauta publicitaria</li>
+            </ul>
+            <a href="#" class="boton-plan">Elegir Plan</a>
+        </div>
+
+        <!-- PLAN 3: EMPRESA - Elite -->
+        <div class="precio-card empresa">
+            <span class="etiqueta-plan">Empresa</span>
+            <h3>Dominio Total</h3>
+            <p class="precio">$12,000 <span>/ mes</span></p>
+            <ul class="lista-beneficios">
+                <li>✔ Branding y Rediseño Web</li>
+                <li>✔ Contenido ilimitado coordinado</li>
+                <li>✔ Soporte prioritario 24/7</li>
+            </ul>
+            <a href="#" class="boton-plan">Elegir Plan</a>
+        </div>
+
+        <!-- PLAN 4: INDIVIDUAL - Starter -->
+        <div class="precio-card individual oculto">
+            <span class="etiqueta-plan">Individual</span>
+            <h3>Creador Starter</h3>
+            <p class="precio">$1,200 <span>/ único</span></p>
+            <ul class="lista-beneficios">
+                <li>✔ Kit de plantillas editables</li>
+                <li>✔ Guía de estética para Instagram/TikTok</li>
+                <li>✔ Asesoría de 1 hora</li>
+            </ul>
+            <a href="#" class="boton-plan">Elegir Plan</a>
+        </div>
+
+        <!-- PLAN 5: INDIVIDUAL - Creator -->
+        <div class="precio-card individual oculto">
+            <span class="etiqueta-plan">Individual</span>
+            <h3>Influencer Pro</h3>
+            <p class="precio">$2,800 <span>/ mes</span></p>
+            <ul class="lista-beneficios">
+                <li>✔ Edición de 8 Reels / TikToks</li>
+                <li>✔ Curaduría de feed personalizada</li>
+                <li>✔ Planner de contenidos mensual</li>
+            </ul>
+            <a href="#" class="boton-plan">Elegir Plan</a>
+        </div>
+
+        <!-- PLAN 6: INDIVIDUAL - VIP -->
+        <div class="precio-card individual oculto">
+            <span class="etiqueta-plan">Individual</span>
+            <h3>Marca Personal VIP</h3>
+            <p class="precio">$5,000 <span>/ mes</span></p>
+            <ul class="lista-beneficios">
+                <li>✔ Imagen coordinada integral</li>
+                <li>✔ Creación y edición masiva de video</li>
+                <li>✔ Manejo de alianzas con marcas</li>
+            </ul>
+            <a href="#" class="boton-plan">Elegir Plan</a>
+        </div>
+
+    </div>
+</section>
+
+ <footer>
+    <!--Aqui los alumnos agregaran 4 iconos de redes sociales y que va a llevar linkeado directamente a nuestras redes sociales, y que al dar click en el ícono nos lleve a la red social correspondiente  -->
+    
+    <p>Todos los derechos reservados</p>
+<div class="redes-sociales">
+     <a href="https://youtu.be/j3Iv6Q1QUJM?si=_yH2ylYUpBaJx1OY">
+    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-youtube">
+	<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	<path d="M2 8a4 4 0 0 1 4 -4h12a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-12a4 4 0 0 1 -4 -4v-8" />
+	<path d="M10 9l5 3l-5 3l0 -6" /></svg></a>
+
+    <a href="https://www.instagram.com/sandraguilare">
+    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-instagram">
+	<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	<path d="M4 8a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4l0 -8" />
+	<path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+	<path d="M16.5 7.5v.01" /></svg></a>
+
+    <a href="https://www.tiktok.com/@sandraguiles"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-tiktok">
+	<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	<path d="M21 7.917v4.034a9.948 9.948 0 0 1 -5 -1.951v4.5a6.5 6.5 0 1 1 -8 -6.326v4.326a2.5 2.5 0 1 0 4 2v-11.5h4.083a6.005 6.005 0 0 0 4.917 4.917" /></svg></a>
+
+    <a href="https://www.linkedin.com/in/sandra-aguilar-50572b374/"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-linkedin">
+	<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	<path d="M8 11v5" />
+	<path d="M8 8v.01" />
+	<path d="M12 16v-5" />
+	<path d="M16 16v-3a2 2 0 1 0 -4 0" />
+	<path d="M3 7a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v10a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4l0 -10" /></svg></a>
+</div>
+
+</footer>
+
+<script>
+    function filtrarPlanes(tipo) {
+        const botones = document.querySelectorAll('.btn-switch');
+        const tarjetas = document.querySelectorAll('.precio-card');
+        const tipoClase = tipo === 'empresas' ? 'empresa' : 'individual';
+
+        botones.forEach((boton) => {
+            boton.classList.toggle('activo', boton.dataset.tipo === tipo);
+        });
+
+        tarjetas.forEach((tarjeta) => {
+            const mostrar = tarjeta.classList.contains(tipoClase);
+            tarjeta.classList.toggle('oculto', !mostrar);
+        });
+    }
+</script>
+</body>
+</html>

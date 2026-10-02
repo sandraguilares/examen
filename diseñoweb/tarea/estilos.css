@@ -1,0 +1,76 @@
+/* 1. Variable global (:root): Aquí guardamos colores o valores que vamos a usar en toda la página para no repetirlos. */
+:root {
+    --color-primario: #e84873;
+}
+
+/* 2. Color de fondo general de la página. */
+body {
+    background-color: #f4f4f4;
+    
+    /* 3. Tipografía o tipo de letra que se usará en el sitio. */
+    font-family: Arial, sans-serif;
+}
+
+/* 4. Color del título principal. */
+h1 {
+    color: var(--color-primario);
+    
+    /* 5. Tamaño del texto del título. */
+    font-size: 2rem;
+    
+    /* 6. Centrar el texto en la pantalla. */
+    text-align: center;
+}
+
+/* 7. Flexbox: Convierte al menú en una caja flexible para acomodar sus elementos fácilmente. */
+nav {
+    display: flex;
+    
+    /* 8. Espacia los elementos de adentro (los enlaces) para que queden bien distribuidos. */
+    justify-content: space-around;
+    
+    /* 9. Centra verticalmente los elementos dentro del menú. */
+    align-items: center;
+}
+
+/* 10. Espacio de relleno (padding) por dentro de la tarjeta para que el texto no pegue con las orillas. */
+.tarjeta {
+    padding: 20px;
+    
+    /* 11. Margen exterior para separar la tarjeta de otros elementos y centrarla (auto). */
+    margin: 15px auto;
+    
+    /* 12. Borde delgado alrededor de la tarjeta. */
+    border: 1px solid #ddd;
+    
+    /* 13. Redondea las esquinas de la tarjeta. */
+    border-radius: 8px;
+    
+    /* 14. Ancho máximo que puede medir la tarjeta para que no se estire de más. */
+    width: 100%;
+    max-width: 350px;
+}
+
+/* 15. Sombra difuminada para darle un efecto de profundidad a la tarjeta. */
+.tarjeta {
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* 16. Cambia el cursor a una manita cuando pasas el ratón por encima del botón. */
+button {
+    cursor: pointer;
+    
+    /* 17. Fondo con un degradado de colores para el botón. */
+    background: linear-gradient(45deg, #e84873, #ff758c);
+    
+    /* 18. Hace que la animación al pasar el ratón se vea suave y fluida. */
+    transition: all 0.3s ease;
+}
+
+/* 19. Efecto que se activa únicamente cuando pasas el cursor sobre el botón. */
+button:hover {
+    opacity: 0.85;
+    
+    /* 20. Mueve ligeramente el botón hacia arriba para darle dinamismo. */
+    transform: translateY(-3px);
+}
